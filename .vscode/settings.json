@@ -13,7 +13,7 @@
   "terminal.integrated.defaultProfile.linux": "bash",
   "python.analysis.typeCheckingMode": "basic",
   "[python]": {
-    "editor.defaultFormatter": "charliermarsh.ruff"
+    "editor.defaultFormatter": "astral-sh.ruff"
   },
   "[markdown]": {
     "editor.wordWrap": "on"

@@ -4,7 +4,7 @@
     "github.copilot-chat",
     "ms-python.python",
     "ms-python.debugpy",
-    "charliermarsh.ruff",
+    "astral-sh.ruff",
     "ms-dotnettools.csdevkit",
     "ms-azuretools.vscode-bicep",
     "hashicorp.terraform",
