@@ -1,0 +1,17 @@
+{
+  "recommendations": [
+    "github.copilot",
+    "github.copilot-chat",
+    "ms-python.python",
+    "ms-python.debugpy",
+    "charliermarsh.ruff",
+    "ms-dotnettools.csdevkit",
+    "ms-azuretools.vscode-bicep",
+    "hashicorp.terraform",
+    "ms-azuretools.vscode-docker",
+    "esbenp.prettier-vscode",
+    "eamodio.gitlens",
+    "yzhang.markdown-all-in-one",
+    "ms-vscode.azure-account"
+  ]
+}
