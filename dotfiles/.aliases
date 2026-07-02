@@ -1,0 +1,52 @@
+# ~/.aliases - yusuke-devbox ショートカット集
+
+# -------------------------------------------------------
+# 一般
+# -------------------------------------------------------
+alias ll='ls -alF --color=auto'
+alias la='ls -A --color=auto'
+alias cls='clear'
+alias ..='cd ..'
+alias ...='cd ../..'
+
+# -------------------------------------------------------
+# Git
+# -------------------------------------------------------
+alias gs='git status'
+alias ga='git add'
+alias gc='git commit'
+alias gp='git push'
+alias gl='git log --oneline --graph --decorate -20'
+alias gd='git diff'
+alias gco='git checkout'
+alias gbr='git branch'
+alias gpull='git pull --rebase'
+
+# -------------------------------------------------------
+# Docker
+# -------------------------------------------------------
+alias dk='docker'
+alias dkc='docker compose'
+alias dkps='docker ps --format "table {{.Names}}\t{{.Status}}\t{{.Ports}}"'
+
+# -------------------------------------------------------
+# Python
+# -------------------------------------------------------
+alias py='python3'
+alias pip='pip3'
+alias venv='python3 -m venv'
+alias activate='source .venv/bin/activate'
+
+# -------------------------------------------------------
+# Azure
+# -------------------------------------------------------
+alias azl='az login'
+alias azs='az account show -o table'
+alias azsl='az account list -o table'
+
+# -------------------------------------------------------
+# DevBox ユーティリティ
+# -------------------------------------------------------
+alias devbox-setup='bash ~/scripts/setup.sh'
+alias devbox-update='bash ~/scripts/update-tools.sh'
+alias devbox-clone='bash ~/scripts/clone-project.sh'
