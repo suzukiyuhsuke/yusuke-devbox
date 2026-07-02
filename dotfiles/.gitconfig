@@ -1,0 +1,39 @@
+[user]
+	# Codespaces が自動設定するため通常は不要
+	# name = Your Name
+	# email = your@email.com
+
+[core]
+	editor = code --wait
+	autocrlf = input
+	pager = less -FRX
+
+[init]
+	defaultBranch = main
+
+[pull]
+	rebase = true
+
+[fetch]
+	prune = true
+
+[push]
+	autoSetupRemote = true
+
+[diff]
+	colorMoved = default
+
+[merge]
+	conflictstyle = diff3
+
+[rerere]
+	enabled = true
+
+[alias]
+	st = status
+	co = checkout
+	br = branch
+	lg = log --oneline --graph --decorate -20
+	unstage = reset HEAD --
+	last = log -1 HEAD
+	amend = commit --amend --no-edit

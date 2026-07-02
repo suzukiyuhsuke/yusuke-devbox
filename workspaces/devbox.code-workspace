@@ -1,0 +1,58 @@
+{
+  "folders": [
+    {
+      "name": "🏠 DevBox Root",
+      "path": ".."
+    }
+  ],
+  "settings": {
+    // ----- エディタ -----
+    "editor.formatOnSave": true,
+    "editor.minimap.enabled": false,
+    "editor.bracketPairColorization.enabled": true,
+    "editor.guides.bracketPairs": "active",
+    "files.trimTrailingWhitespace": true,
+    "files.insertFinalNewline": true,
+
+    // ----- ファイル非表示 -----
+    "files.exclude": {
+      "**/node_modules": true,
+      "**/__pycache__": true,
+      "**/.terraform": true,
+      "**/*.pyc": true
+    },
+
+    // ----- ターミナル -----
+    "terminal.integrated.defaultProfile.linux": "bash",
+
+    // ----- Python -----
+    "python.analysis.typeCheckingMode": "basic",
+    "[python]": {
+      "editor.defaultFormatter": "charliermarsh.ruff"
+    },
+
+    // ----- Markdown -----
+    "[markdown]": {
+      "editor.wordWrap": "on"
+    }
+  },
+  "extensions": {
+    "recommendations": [
+      "github.copilot",
+      "github.copilot-chat",
+      "ms-python.python",
+      "charliermarsh.ruff",
+      "ms-dotnettools.csdevkit",
+      "ms-azuretools.vscode-bicep",
+      "hashicorp.terraform",
+      "esbenp.prettier-vscode",
+      "eamodio.gitlens",
+      "yzhang.markdown-all-in-one"
+    ]
+  },
+  "launch": {
+    "version": "0.2.0",
+    "configurations": [],
+    "compounds": []
+  }
+}
