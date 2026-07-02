@@ -1,6 +1,21 @@
 # ~/.bashrc - yusuke-devbox 用カスタム設定
 
 # -------------------------------------------------------
+# ウェルカムメッセージ
+# -------------------------------------------------------
+if [[ $- == *i* ]]; then
+  echo ""
+  echo "  Welcome to yusuke-devbox"
+  echo "  ─────────────────────────────────────────"
+  printf "  %-10s %s\n" "Node.js" "$(node --version 2>/dev/null || echo 'not installed')"
+  printf "  %-10s %s\n" "Python" "$(python3 --version 2>/dev/null | awk '{print $2}' || echo 'not installed')"
+  printf "  %-10s %s\n" "Rust" "$(rustc --version 2>/dev/null | awk '{print $2}' || echo 'not installed')"
+  printf "  %-10s %s\n" ".NET" "$(dotnet --version 2>/dev/null || echo 'not installed')"
+  echo "  ─────────────────────────────────────────"
+  echo ""
+fi
+
+# -------------------------------------------------------
 # プロンプト
 # -------------------------------------------------------
 parse_git_branch() {

@@ -2,6 +2,19 @@
   "name": "yusuke-devbox",
   "image": "mcr.microsoft.com/devcontainers/base:ubuntu-24.04",
   "features": {
+    "ghcr.io/devcontainers/features/python:1": {
+      "version": "latest"
+    },
+    "ghcr.io/devcontainers/features/node:1": {
+      "version": "lts"
+    },
+    "ghcr.io/devcontainers/features/java:1": {
+      "version": "lts"
+    },
+    "ghcr.io/devcontainers/features/rust:1": {},
+    "ghcr.io/devcontainers/features/dotnet:2": {
+      "version": "lts"
+    },
     "ghcr.io/devcontainers/features/azure-cli:1": {},
     "ghcr.io/devcontainers/features/github-cli:1": {},
     "ghcr.io/devcontainers/features/docker-in-docker:2": {},
@@ -26,6 +39,7 @@
         "ms-python.debugpy",
         "charliermarsh.ruff",
         "ms-dotnettools.csdevkit",
+        "rust-lang.rust-analyzer",
         "ms-azuretools.vscode-bicep",
         "hashicorp.terraform",
         "ms-azuretools.vscode-docker",
@@ -37,12 +51,7 @@
     }
   },
   "postCreateCommand": "bash .devcontainer/post-create.sh",
-  "forwardPorts": [
-    3000,
-    5000,
-    8000,
-    8080
-  ],
+  "forwardPorts": [3000, 5000, 8000, 8080],
   "portsAttributes": {
     "3000": {
       "label": "Frontend"

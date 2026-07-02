@@ -185,3 +185,17 @@ print(response.choices[0].message.content)
 ---
 
 > **注意:** このリポジトリは個人の開発環境であり、機密情報やクレデンシャルをコミットしないよう注意してください。`.env` ファイルは必ず `.gitignore` に含めてください。
+
+## ランタイムのバージョン管理
+
+各言語のバージョン更新方法をまとめます。
+
+| 言語 | バージョンマネージャー | コンテナ内での更新 | Rebuild時の挙動 |
+|---|---|---|---|
+| Node.js | nvm | `nvm install --lts && nvm alias default lts/*` | 最新 LTS を自動取得 |
+| Rust | rustup | `rustup update` | 安定版を自動取得 |
+| Python | devcontainer feature | Rebuild が必要 | 最新版を自動取得 |
+| C# / .NET | devcontainer feature | Rebuild が必要 | 最新 LTS を自動取得 |
+| Java | SDKMAN | `sdk update java` | 最新 LTS を自動取得 |
+
+> Rebuild は VS Code コマンドパレットから **Dev Containers: Rebuild Container** を実行します。
